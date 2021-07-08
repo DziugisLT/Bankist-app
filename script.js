@@ -1,14 +1,5 @@
 'use strict';
 
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
-// BANKIST APP
-
-/////////////////////////////////////////////////
-// Data
-
-// DIFFERENT DATA! Contains movement dates, currency and locale
-
 const account1 = {
   owner: 'Jonas Schmedtmann',
   movements: [200, 455.23, -306.5, 25000, -642.21, -133.9, 79.97, 1300],
@@ -327,25 +318,3 @@ btnSort.addEventListener('click', function (event) {
   displayMovements(currentAccount, !sorted);
   sorted = !sorted;
 });
-
-//////////Lectures hehe /////////////
-
-/* console.log(10 / 3 + 0.1);
-console.log(+'23'); */
-
-/* const num = 3548457458.23;
-const options = {
-  style: 'currency',
-  unit: 'celsius',
-  currency: 'EUR',
-  // useGrouping: false,
-};
-
-console.log('US: ', new Intl.NumberFormat('en-US', options).format(num));
-console.log('Germany: ', new Intl.NumberFormat('de-DE', options).format(num));
-console.log('LT: ', new Intl.NumberFormat('lt-LT', options).format(num)); */
-
-/* setInterval(() => {
-  const now = `${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`;
-  console.log(now);
-}, 1000); */
